@@ -576,7 +576,7 @@ pre code {
   .container {
     max-width: 1140px;
     max-width: 1140px;
-    padding-bottom: 2rem;
+    padding-bottom: 0rem;
     padding-top: 1rem;
   }
 }

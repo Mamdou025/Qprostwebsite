@@ -3,10 +3,15 @@ body {
     
   }
   .cardsandpricing{
-    background-image: url(/images/Image3.png);
+    
     background-size: cover;
+    background-image: url(/images/Image3.png);
+
+
   }
-  
+  #contacteznous{
+    color: white;
+  }
   #nature{
     color:blue;
   }

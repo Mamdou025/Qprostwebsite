@@ -1448,8 +1448,6 @@ iframe {
 .form-2 {
 	padding-top: 1rem;
 	padding-bottom: 1rem;
-	background: url('../images/contact-background.jpg') center center no-repeat;
-	background-size: cover;
 }
 
 .form-2 h2 {
@@ -1497,9 +1495,14 @@ iframe {
 /**********************/
 /*     16. Footer     */
 /**********************/
-.footer {
+.contactandfooter {
 	padding-top: 1rem;
 	padding-bottom: 0.5rem;
+	background-image: url(/images/wavesf.png);
+	background-position: center;
+	background-size: cover;
+	
+	
 }
 
 .footer .footer-col {
@@ -1550,7 +1553,7 @@ iframe {
 /*************************/
 .copyright {
 	padding-top: 1rem;
-	padding-bottom: 0.375rem;
+	
 	text-align: center;
 }
 
