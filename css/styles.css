@@ -44,6 +44,11 @@ Colors:
 /******************************/
 /*     01. General Styles     */
 /******************************/
+#worker{
+border: 3px solid rgba(0,137,241,255);
+border-radius: 5px;
+}
+
 
 .pure{
 	color: white;
