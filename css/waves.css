@@ -2,10 +2,18 @@ body {
     margin:0;
     
   }
+  .cardsandpricing{
+    background-image: url(/images/Image3.png);
+    background-size: cover;
+  }
   
-  
-  
-  
+  #nature{
+    color:blue;
+  }
+#nosfontaines{
+  color: white;
+}
+
   .wavediv {
     position:relative;
     text-align:center;

@@ -829,7 +829,6 @@ input[type='checkbox'] {
 	padding-top: 3rem;
 	padding-bottom: 1.625rem;
 	text-align: center;
-	background-image: url(/images/waves.png);
 	background-size: cover;
 }
 
@@ -1018,7 +1017,6 @@ input[type='checkbox'] {
 	padding-top: 1rem;
 	padding-bottom: 0.5rem;
 	text-align: center;
-	background-image: url(/images/wavesf.png);
 	background-size:cover;
 }
 
@@ -1975,7 +1973,6 @@ a:hover.back-to-top {
 		margin-left: 1rem;
 	}
 	.cards-2{
-		background-image: url(/images/wavesf2.png);
 		background-size: cover;
 		
 
@@ -2113,7 +2110,6 @@ a:hover.back-to-top {
 		background-color: white;
 	}
 	.cards-1{
-		background-image:url(/images/waves.png);
 		background-size: cover;
 		
 	}
