@@ -1,0 +1,50 @@
+.logo{
+    height: 51px;
+    width: 105px;
+}
+.navbar.navbar-expand-lg.navbar-dark.navbar-custom.fixed-top .logo{
+    background-image: url(/images/Image1.png);
+    background-size: cover;
+    z-index: 999;
+    
+    
+}
+
+.navbar.navbar-expand-lg.navbar-dark.navbar-custom.top-nav-collapse .logo{
+    background-image: url(/images/Image2.png);
+    z-index: 999;
+    
+}
+
+@media only screen and (max-width: 992px) {
+    .navbar.navbar-expand-lg.navbar-dark.navbar-custom.fixed-top .logo{
+        background-image: url(/images/Image1.png);
+        background-size: cover;
+        z-index: 999;
+        
+        
+    }
+    .navbar-custom.fixed-top {
+        background-color: #009fcf;
+        box-shadow: 0 0.0625rem 0.375rem 0 rgb(0 0 0 / 10%);
+        font: 600 0.875rem/0.875rem "Raleway", sans-serif;
+        transition: all 0.2s;
+    }
+
+    .navbar-custom.top-nav-collapse  {
+        background-color: #fcfcfc;
+        box-shadow: 0 0.0625rem 0.375rem 0 rgb(0 0 0 / 10%);
+        font: 600 0.875rem/0.875rem "Raleway", sans-serif;
+        transition: all 0.2s;
+    }
+
+    .navbar.navbar-expand-lg.navbar-dark.navbar-custom.top-nav-collapse .logo{
+        background-image: url(/images/Image2.png);
+        z-index: 999;
+        
+    }
+
+
+    
+    
+  }
