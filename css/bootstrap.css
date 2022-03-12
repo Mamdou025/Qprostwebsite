@@ -620,6 +620,7 @@ pre code {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+  text-align: center;
 }
 
 .col {
@@ -1217,6 +1218,7 @@ pre code {
     flex: 0 0 50%;
     max-width: 50%;
     padding-bottom: 1rem;
+    text-align: center;
   }
   .col-lg-7 {
     -ms-flex: 0 0 58.333333%;
