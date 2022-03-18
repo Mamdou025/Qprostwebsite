@@ -347,3 +347,55 @@
 	});
 
 })(jQuery);
+
+
+
+
+//login ppage
+
+$('#login-button').click(function(){
+    $('#login-button').fadeOut("slow",function(){
+      $("#container").fadeIn();
+      TweenMax.from("#container", .2, { scale: 0, ease:Sine.easeInOut});
+      TweenMax.to("#container", .2, { scale: 1, ease:Sine.easeInOut});
+    });
+  });
+  
+  $(".close-btn").click(function(){
+    TweenMax.from("#container", .2, { scale: 1, ease:Sine.easeInOut});
+    TweenMax.to("#container", .2, { left:"0px", scale: 0, ease:Sine.easeInOut});
+    $("#container, #forgotten-container").fadeOut(100, function(){
+      $("#login-button").fadeIn(400);
+    });
+  });
+  
+  /* Forgotten Password */
+  $('#forgotten').click(function(){
+    $("#container").fadeOut(function(){
+      $("#forgotten-container").fadeIn();
+    });
+  });
+
+  //fill path
+  function fill(){
+      const remplissage =document.querySelectorAll('.bloco').forEach(Element=>Element.addEventListener("click",changecouleuremplissage));
+      console.log(remplissage);
+
+  }
+
+  function changecouleuremplissage(event){
+      if (event.target.style.fill==='cyan'){
+          event.target.style.fill = 'red';
+          console.log('rouge');
+         
+      }
+      else{
+        event.target.style.fill= 'cyan';
+        console.log('cyan');
+      }
+  }
+
+
+
+
+  fill();
