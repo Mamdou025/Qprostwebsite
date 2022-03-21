@@ -30,6 +30,7 @@ Qu’est-ce que cela signifie ? Qu’est-ce qui nous différencie ? Pourquoi est
     <link rel="stylesheet" href="css/logo.css">
     <link rel="stylesheet" href="/css/galery.css">
     <link rel="stylesheet" href="/css/mouvements.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
 
 	<!-- Favicon  -->
     <link rel="icon" href="images/iconne.png">
@@ -37,7 +38,7 @@ Qu’est-ce que cela signifie ? Qu’est-ce qui nous différencie ? Pourquoi est
 <body data-spy="scroll" data-target=".fixed-top"><a href="body" class="back-to-top page-scroll" style="display: inline;">Back to Top</a><a href="body" class="back-to-top page-scroll" style="display: inline;">Back to Top</a><a href="body" class="back-to-top page-scroll" style="display: inline;">Back to Top</a><a href="body" class="back-to-top page-scroll" style="display: inline;">Back to Top</a><a href="body" class="back-to-top page-scroll" style="display: inline;">Back to Top</a><a href="body" class="back-to-top page-scroll" style="display: inline;">Back to Top</a>
 
     <!-- Preloader -->
-	<div class="spinner-wrapper" style="display: none;">
+	<div class="spinner-wrapper" style="display:none" >
         <div class="spinner">
             <div class="bounce1"></div>
             <div class="bounce2"></div>
@@ -110,24 +111,13 @@ Qu’est-ce que cela signifie ? Qu’est-ce qui nous différencie ? Pourquoi est
     
     <!-- fin de la Navigation originale -->
 
-    
-    
-     <!--Navigation test -->
-      <!--logo fixé transparent -->
-    
-     <!--logo collapse non transparent -->
-    
-    <!-- fin de la navigation test  -->
 
-
-    <!-- Header -->
-    
+  
         
         
-            <!-- end of header-content -->
    
     <!-- end of header -->
-    <div class="wavediv">
+    <div class="wavediv"  id="wavediv">
 
         
 
@@ -466,14 +456,21 @@ Qu’est-ce que cela signifie ? Qu’est-ce qui nous différencie ? Pourquoi est
 
 </div>
 
+     <!-- titres -->
+    
+
+     </div>
 
     <!-- Requestss -->
     <div id="request" class="form-1">
         <div class="container">
+            
+
             <div class="row">
                 <div class="col-lg-6">
+                    <h2>Pourquoi choisir une fontaine? </h2>
                     <div class="text-container">
-                        <h2>Pourquoi choisir une fontaine? </h2>
+                        
                         <p>Voici une liste des avantages à etre proprietaire d'une fontaine . Evaluez aussi les couts de votre consommation d'eau chez vous ou dans votre entreprise.</p>
                         <ul class="list-unstyled li-space-lg">
                             <li class="media">
@@ -496,13 +493,56 @@ Qu’est-ce que cela signifie ? Qu’est-ce qui nous différencie ? Pourquoi est
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
+                    <h2>Calculez les couts  </h2>
+                    <div class="calculateur">
+                        <div id="resumeconsommation"></div>
+                        
+                        <div class="quantiteeau">
+                            <label for="customRange1" class="form-label1">Quantité d'eau <i class="bi bi-droplet"></i>  </label>
+                            <input type="range" class="form-range" id="customRange1" min="1"  max="60" step="1">
+                            <p class="form-label11" id="wata">Nombre de bouteilles de 20L</p>
+                        </div>
+                        <div class="quantiteeau">
+                            <label for="customRange1" class="form-label2" >Nombre de mois<i class="bi bi-calendar-date"></i></label>
+                            <input type="range" class="form-range" id="customRange2" min="1" max="36" step="1">
+                            <p class="form-label22" id="tempo">Nombre de mois dont la consommation est maitenue</p>
+                        </div>
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01">Type de fontaine</label>
+                            <select class="form-select" id="inputGroupSelect01">
+                              
+                              <option value="1">Classique</option>
+                              <option value="2">prestige</option>
+                              <option value="3">Inox</option>
+                            </select>
+                          </div>
 
 
-                  <link rel="stylesheet" href="https://embed.calculoid.com/styles/main.css" />
-                  <script src="https://embed.calculoid.com/scripts/combined.min.js"></script>
-                  <div ng-app="calculoid" ng-controller="CalculoidMainCtrl" ng-init="init({calcId:82510,apiKey:'d85c06305f662e9b866be'})" ng-include="load()"></div>
+                          <div class="consommation">
+                          <div class="containera">
+                            
+                               <div class="row">
+                                  
+                                      <div class="col">                                  
+                                       Consomation Fontaine <p id="fontainecons">123456</p>
+                                      </div>
+                                      <div class="col order-5">
+                                       Consomation Bouteilles<p id="bouteillecons">123456</p>
+                                      </div>
+                                       <div class="col order-1">
+                                        Difference<p id="differencecons">123456</p>
+                                       </div>
+                                  </div>
 
-                               </div> <!-- end of col -->
+                                
+                            </div>
+                          </div>
+                    </div>
+
+
+                  
+
+                </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of form-1 -->
@@ -564,7 +604,7 @@ Qu’est-ce que cela signifie ? Qu’est-ce qui nous différencie ? Pourquoi est
                           <span class="social-icons">
                               <span class="fa-stack">
                                   <a href="https://wa.me/+221774161396?text=Bonjour M. Diop">
-                                      <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                    <i class="bi bi-whatsapp"></i>
 
 
                                   </a>
@@ -584,7 +624,7 @@ Qu’est-ce que cela signifie ? Qu’est-ce qui nous différencie ? Pourquoi est
                           <span class="social-icons">
                               <span class="fa-stack">
                                   <a href="https://wa.me/+221771697777?text=Bonjour M. Fall">
-                                      <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                    <i class="bi bi-whatsapp"></i>
 
 
                                   </a>
@@ -820,8 +860,9 @@ Qu’est-ce que cela signifie ? Qu’est-ce qui nous différencie ? Pourquoi est
     <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
     <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
-    <script src="js/scripts.js"></script> <!-- Custom scripts -->
     
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>  <!-- pour les charts/graphiques -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
 
 
 
