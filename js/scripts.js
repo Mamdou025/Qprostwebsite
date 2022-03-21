@@ -404,16 +404,11 @@ $('#login-button').click(function(){
 
 //element test
 
+(function affichagechart(){
+const ctx = document.getElementById('myChart');
 
 
-
-
-    
-
-
-
- 
-    const ctx = document.getElementById('myChart');
+if (ctx !== null){
     const myChart = new Chart(ctx, {
         type: 'bar',
         data: {
@@ -448,6 +443,10 @@ $('#login-button').click(function(){
         }
     }
     )
+}else{
+
+}
+})();
   
 
 
