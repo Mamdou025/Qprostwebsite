@@ -8,10 +8,10 @@ Qu’est-ce que cela signifie ? Qu’est-ce qui nous différencie ? Pourquoi est
     <meta name="Mamadou" content="Qprost">
 
     <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
-	<meta property="og:site_name" content=""> <!-- website name -->
-	<meta property="og:site" content=""> <!-- website link -->
-	<meta property="og:title" content=""> <!-- title shown in the actual shared post -->
-	<meta property="og:description" content=""> <!-- description shown in the actual shared post -->
+	<meta property="Qprostwater" content=""> <!-- website name -->
+	<meta property="Page d'Accueil" content=""> <!-- website link -->
+	<meta property="Qprostwater" content=""> <!-- title shown in the actual shared post -->
+	<meta property="Fontaines a eau réseau" content=""> <!-- description shown in the actual shared post -->
 	<meta property="og:image" content=""> <!-- image link, make sure it's jpg -->
 	<meta property="og:url" content=""> <!-- where do you want your post to link to -->
 	<meta property="og:type" content="article">
@@ -26,6 +26,11 @@ Qu’est-ce que cela signifie ? Qu’est-ce qui nous différencie ? Pourquoi est
     <link href="css/swiper.css" rel="stylesheet">
 	<link href="css/magnific-popup.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/waves.css">
+    <link rel="stylesheet" href="css/logo.css">
+    <link rel="stylesheet" href="/css/galery.css">
+    <link rel="stylesheet" href="/css/mouvements.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
 
 	<!-- Favicon  -->
     <link rel="icon" href="images/iconne.png">
@@ -33,7 +38,7 @@ Qu’est-ce que cela signifie ? Qu’est-ce qui nous différencie ? Pourquoi est
 <body data-spy="scroll" data-target=".fixed-top"><a href="body" class="back-to-top page-scroll" style="display: inline;">Back to Top</a><a href="body" class="back-to-top page-scroll" style="display: inline;">Back to Top</a><a href="body" class="back-to-top page-scroll" style="display: inline;">Back to Top</a><a href="body" class="back-to-top page-scroll" style="display: inline;">Back to Top</a><a href="body" class="back-to-top page-scroll" style="display: inline;">Back to Top</a><a href="body" class="back-to-top page-scroll" style="display: inline;">Back to Top</a>
 
     <!-- Preloader -->
-	<div class="spinner-wrapper" style="display: none;">
+	<div class="spinner-wrapper" style="display:none" >
         <div class="spinner">
             <div class="bounce1"></div>
             <div class="bounce2"></div>
@@ -47,17 +52,17 @@ Qu’est-ce que cela signifie ? Qu’est-ce qui nous différencie ? Pourquoi est
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top top-nav-collapse">
         <!-- Text Logo - Use this if you don't have a graphic logo -->
         <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Evolo</a> -->
-
+    
         <!-- Image Logo -->
-        <a class="navbar-brand logo-image" href="index.html"><img src="images/Qprostw.png" alt="alternative" style="  height: 51px;  width: 99px;"></a>
-
+        <a class="navbar-brand logo-image" href="index.html"><div class="logo"></div></a>
+    
         <!-- Mobile Menu Toggle Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-awesome fas fa-bars"></span>
             <span class="navbar-toggler-awesome fas fa-times"></span>
         </button>
         <!-- end of mobile menu toggle button -->
-
+    
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -69,20 +74,20 @@ Qu’est-ce que cela signifie ? Qu’est-ce qui nous différencie ? Pourquoi est
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#pricing">Nos fontaines</a>
                 </li>
-
+    
                 <li class="nav-item">
-                   <a class="nav-link page-scroll" href="Galerie.html"><strong>Galerie</strong></a>
+                   <a class="nav-link page-scroll" href="#galerie"><strong>Galerie</strong></a>
                </li>
-
-
+    
+    
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#about">Notre equipe</a>
                 </li>
-
+    
                 <!-- Dropdown Menu -->
-
+    
                 <!-- end of dropdown menu -->
-
+    
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#contact">Contact</a>
                 </li>
@@ -102,31 +107,70 @@ Qu’est-ce que cela signifie ? Qu’est-ce qui nous différencie ? Pourquoi est
                 </span>
             </span>
         </div>
-    </nav> <!-- end of navbar -->
-    <!-- end of navigation -->
+    </nav>
+    
+    <!-- fin de la Navigation originale -->
 
 
-    <!-- Header -->
-    <header id="header" class="header">
-        <div class="header-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="text-container">
-                            <h1><span class="turquoise">Qprost Water </span>L'eau pure simplifiée</h1>
-                            <p class="p-large">Adieu aux bouteilles d'eau économisez de l'argent et buvez de l'eau mineralisée</p>
-                            <a class="btn-solid-lg page-scroll" href="#presentation">Presentation</a>
-                        </div> <!-- end of text-container -->
-                    </div> <!-- end of col -->
-                    <div class="col-lg-6">
-                        <div class="image-container">
-                            <img class="img-fluid" src="images/fontaineslogo2.png" alt="alternative">
-                        </div> <!-- end of image-container -->
-                    </div> <!-- end of col -->
-                </div> <!-- end of row -->
-            </div> <!-- end of container -->
-        </div> <!-- end of header-content -->
-    </header> <!-- end of header -->
+  
+        
+        
+   
+    <!-- end of header -->
+    <div class="wavediv"  id="wavediv">
+
+        
+
+        <!--Content before waves-->
+        <div class="inner-header flex">
+        <!--Just the logo.. Don't mind this-->
+        <header id="header" class="header">
+            
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="text-container">
+                                <h1><span class="turquoise">Qprost Water </span></h1><h1 class="pure">L'eau pure simplifiée</h1>
+                                <p class="p-large">Adieu aux bouteilles d'eau économisez de l'argent et buvez de l'eau mineralisée</p>
+                                <a class="btn-solid-lg page-scroll" href="#presentation">Presentation</a>
+                            </div> <!-- end of text-container -->
+                        </div> <!-- end of col -->
+                        <div class="col-lg-6">
+                            <div class="image-container">
+                                <img class="img-fluid" src="images/fontaineslogo2.png" alt="alternative">
+                            </div> <!-- end of image-container -->
+                        </div> <!-- end of col -->
+                    </div> <!-- end of row -->
+                </div><!-- end of container -->
+             <!-- end of header-content -->
+        </header>
+        <g><path fill="#fff"
+        d="M250.4,0.8C112.7,0.8,1,112.4,1,250.2c0,137.7,111.7,249.4,249.4,249.4c137.7,0,249.4-111.7,249.4-249.4
+        C499.8,112.4,388.1,0.8,250.4,0.8z M383.8,326.3c-62,0-101.4-14.1-117.6-46.3c-17.1-34.1-2.3-75.4,13.2-104.1
+        c-22.4,3-38.4,9.2-47.8,18.3c-11.2,10.9-13.6,26.7-16.3,45c-3.1,20.8-6.6,44.4-25.3,62.4c-19.8,19.1-51.6,26.9-100.2,24.6l1.8-39.7		c35.9,1.6,59.7-2.9,70.8-13.6c8.9-8.6,11.1-22.9,13.5-39.6c6.3-42,14.8-99.4,141.4-99.4h41L333,166c-12.6,16-45.4,68.2-31.2,96.2	c9.2,18.3,41.5,25.6,91.2,24.2l1.1,39.8C390.5,326.2,387.1,326.3,383.8,326.3z" />
+        </g>
+        </svg>
+        
+        </div>
+        
+        <!--Waves Container-->
+        <div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+        </svg>
+        </div>
+        <!--Waves end-->
+        
+        </div>
     <!-- end of header -->
 
 
@@ -179,11 +223,7 @@ Qu’est-ce que cela signifie ? Qu’est-ce qui nous différencie ? Pourquoi est
                                         <img class="img-responsive" src="images/clients/im9.png" alt="alternative">
                                     </div>
                                 </div>
-                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" style="width: 245px; margin-right: 20px;" data-swiper-slide-index="0">
-                                    <div class="image-container">
-                                        <img class="img-responsive" src="images/customer-logo-7.png" alt="alternative">
-                                    </div>
-                                </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" style="width: 245px; margin-right: 20px;" data-swiper-slide-index="1">
+                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" style="width: 245px; margin-right: 20px;" data-swiper-slide-index="1">
                                     <div class="image-container">
                                         <img class="img-responsive" src="images/clients/im5.png" alt="alternative">
                                     </div>
@@ -197,9 +237,6 @@ Qu’est-ce que cela signifie ? Qu’est-ce qui nous différencie ? Pourquoi est
         </div> <!-- end of container -->
     </div> <!-- end of slider-1 -->
     <!-- end of customers -->
-
-
-
 
 
 
@@ -218,21 +255,21 @@ Qu’est-ce que cela signifie ? Qu’est-ce qui nous différencie ? Pourquoi est
                         </div> <!-- end of col -->
                         <div class="col-lg-6">
                             <div class="image-container">
-                                <img class="img-fluid" src="images/worker1.jpg" alt="alternative">
+                                <img class="img-fluid" id="worker" src="images/worker1.jpg" alt="alternative">
                             </div> <!-- end of image-container -->
                         </div> <!-- end of col -->
                     </div> <!-- end of row -->
                 </div> <!-- end of container -->
             </div>
 
-
+<div class="cardsandpricing">
         <!-- Services -->
         <div  class="cards-1"   id="services">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <h2>Les Benefices d'une fontaine à eau réseau</h2>
-                  <p class="p-heading p-large">Par nature, la fontaine à eau branchée au réseau se débarrasse de la bonbonne qui devient redondante puisqu’il n’est plus nécessaire de stocker l’eau. Elle est directement alimentée par l’eau déjà présente dans le bâtiment de votre entreprise </p>
+                  <p class="p-heading p-large" id="nature">Par nature, la fontaine à eau branchée au réseau se débarrasse de la bonbonne qui devient redondante puisqu’il n’est plus nécessaire de stocker l’eau. Elle est directement alimentée par l’eau déjà présente dans le bâtiment de votre entreprise </p>
                     </div> <!-- end of col -->
                 </div> <!-- end of row -->
                 <div class="row">
@@ -276,12 +313,13 @@ Qu’est-ce que cela signifie ? Qu’est-ce qui nous différencie ? Pourquoi est
 
 
 
+
     <!-- Pricing -->
     <div id="pricing" class="cards-2">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>Nos Fontaines</h2>
+                    <h2 id="nosfontaines">Nos Fontaines</h2>
                     <p class="p-heading p-large">Voici nos trois types de fontaines avec des caracteritiques distinctes selon le lieu et leur utilisation.</p>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -416,13 +454,23 @@ Qu’est-ce que cela signifie ? Qu’est-ce qui nous différencie ? Pourquoi est
     <!-- end of pricing -->
 
 
-    <!-- Request -->
+</div>
+
+     <!-- titres -->
+    
+
+     </div>
+
+    <!-- Requestss -->
     <div id="request" class="form-1">
         <div class="container">
+            
+
             <div class="row">
                 <div class="col-lg-6">
+                    <h2>Pourquoi choisir une fontaine? </h2>
                     <div class="text-container">
-                        <h2>Pourquoi choisir une fontaine? </h2>
+                        
                         <p>Voici une liste des avantages à etre proprietaire d'une fontaine . Evaluez aussi les couts de votre consommation d'eau chez vous ou dans votre entreprise.</p>
                         <ul class="list-unstyled li-space-lg">
                             <li class="media">
@@ -445,13 +493,56 @@ Qu’est-ce que cela signifie ? Qu’est-ce qui nous différencie ? Pourquoi est
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
+                    <h2>Calculez les couts  </h2>
+                    <div class="calculateur">
+                        <div id="resumeconsommation"></div>
+                        
+                        <div class="quantiteeau">
+                            <label for="customRange1" class="form-label1">Quantité d'eau  </label>
+                            <input type="range" class="form-range" id="customRange1" min="1"  max="60" step="1">
+                            <p class="form-label11" id="wata">Nombre de bouteilles de 20L</p>
+                        </div>
+                        <div class="quantiteeau">
+                            <label for="customRange1" class="form-label2" >Nombre de mois</label>
+                            <input type="range" class="form-range" id="customRange2" min="1" max="36" step="1">
+                            <p class="form-label22" id="tempo">Nombre de mois dont la consommation est maitenue</p>
+                        </div>
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01">Type de fontaine</label>
+                            <select class="form-select" id="inputGroupSelect01">
+                              
+                              <option value="1">Classique</option>
+                              <option value="2">prestige</option>
+                              <option value="3">Inox</option>
+                            </select>
+                          </div>
 
 
-                  <link rel="stylesheet" href="https://embed.calculoid.com/styles/main.css" />
-                  <script src="https://embed.calculoid.com/scripts/combined.min.js"></script>
-                  <div ng-app="calculoid" ng-controller="CalculoidMainCtrl" ng-init="init({calcId:82510,apiKey:'d85c06305f662e9b866be'})" ng-include="load()"></div>
+                          <div class="consommation">
+                          <div class="containera">
+                            
+                               <div class="row">
+                                  
+                                      <div class="col">                                  
+                                       Consomation Fontaine <p id="fontainecons">123456</p>
+                                      </div>
+                                      <div class="col order-5">
+                                       Consomation Bouteilles<p id="bouteillecons">123456</p>
+                                      </div>
+                                       <div class="col order-1">
+                                        Difference<p id="differencecons">123456</p>
+                                       </div>
+                                  </div>
 
-                               </div> <!-- end of col -->
+                                
+                            </div>
+                          </div>
+                    </div>
+
+
+                  
+
+                </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of form-1 -->
@@ -490,28 +581,6 @@ Qu’est-ce que cela signifie ? Qu’est-ce qui nous différencie ? Pourquoi est
     <!-- end of video -->
 
 
-    <!-- Testimonials -->
-    <div class="slider-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/bottles3.png" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6">
-                    <h2>Galerie</h2>
-
-                    <!-- Card Slider -->
-                    <div data-mc-src="e286d6d6-be7f-4ac1-9225-8fc492e2e616"></div>
-                    <!-- end of card slider -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of slider-2 -->
-    <!-- end of testimonials -->
-
 
     <!-- About -->
     <div id="about" class="basic-4">
@@ -535,7 +604,7 @@ Qu’est-ce que cela signifie ? Qu’est-ce qui nous différencie ? Pourquoi est
                           <span class="social-icons">
                               <span class="fa-stack">
                                   <a href="https://wa.me/+221774161396?text=Bonjour M. Diop">
-                                      <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                    <i class="bi bi-whatsapp"></i>
 
 
                                   </a>
@@ -555,7 +624,7 @@ Qu’est-ce que cela signifie ? Qu’est-ce qui nous différencie ? Pourquoi est
                           <span class="social-icons">
                               <span class="fa-stack">
                                   <a href="https://wa.me/+221771697777?text=Bonjour M. Fall">
-                                      <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                    <i class="bi bi-whatsapp"></i>
 
 
                                   </a>
@@ -579,7 +648,7 @@ Qu’est-ce que cela signifie ? Qu’est-ce qui nous différencie ? Pourquoi est
                       <!-- Team Member -->
                       <div class="team-member">
                           <div class="image-wrapper">
-                              <img class="img-fluid" src="images/equipe/Mamadou.jpg" alt="alternative">
+                              <img class="img-fluid" src="images/equipe/Mamadou2.jpg" alt="alternative">
                           </div> <!-- end of image wrapper -->
                           <p class="p-large"><strong>Mamadou Fall </strong></p>
                           <p class="job-title">Directeur des opérations </p>
@@ -593,13 +662,70 @@ Qu’est-ce que cela signifie ? Qu’est-ce qui nous différencie ? Pourquoi est
     </div> <!-- end of basic-4 -->
     <!-- end of about -->
 
+    
+        <div class="basic-4" id="Galerie">
+            <h2>Galerie</h2>
+            
+                <div class="accordian">
+                    <ul>
+                        <li>
+                            <div class="image_title">
+                                <a href="#">Fontaine prestige</a>
+                            </div>
+                            <a href="#">
+                                <img src="/images/galerie/font2.jpg"/>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="image_title">
+                                <a href="#">Inox</a>
+                            </div>
+                            <a href="#">
+                                <img src="/images/galerie/font3.jpg"/>
+                            </a>
+                        </li> 
+                        <li>
+                            <div class="image_title">
+                                <a href="#">Verticale</a>
+                            </div>
+                            <a href="#">
+                                <img src="/images/galerie/font4.jpg"/>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="image_title">
+                                <a href="#">Osmose</a>
+                            </div>
+                            <a href="#">
+                                <img src="/images/galerie/font5.jpg"/>
+                            </a>
+                        </li> 
+                        <li>
+                            <div class="image_title">
+                                <a href="#">prestige</a>
+                            </div>
+                            <a href="#">
+                                <img src="/images/fontaines/prestigeb.png"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+            
+        </div> <!-- end of container -->
+    
+
+
+
+
+<div class="contactandfooter">
 
     <!-- Contact -->
     <div id="contact" class="form-2">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>Contactez nous </h2>
+                    <h2 id="contacteznous">Contactez nous </h2>
                     <ul class="list-unstyled li-space-lg">
                         <li class="address">N'hesitez pas à nous contater </li>
                         <li><i class="fas fa-map-marker-alt"></i>Avenue Hyacinthe Thiandoum, en face Banque Crédit du Sénégal Dakar</li>
@@ -652,7 +778,7 @@ Qu’est-ce que cela signifie ? Qu’est-ce qui nous différencie ? Pourquoi est
     </div> <!-- end of form-2 -->
     <!-- end of contact -->
 
-
+    
     <!-- Footer -->
     <div class="footer">
         <div class="container">
@@ -702,7 +828,7 @@ Qu’est-ce que cela signifie ? Qu’est-ce qui nous différencie ? Pourquoi est
         </div> <!-- end of container -->
     </div> <!-- end of footer -->
     <!-- end of footer -->
-
+</div>
 
     <!-- Copyright -->
     <div class="copyright">
@@ -722,10 +848,8 @@ Qu’est-ce que cela signifie ? Qu’est-ce qui nous différencie ? Pourquoi est
     <!-- Scripts -->
 
 
-    <script
-  src="https://cdn.woxo.tech/index.js#5f98125a46ecb20017fb1172"
-  async data-usrc>
-   </script>
+    
+  
 
 
 
@@ -736,9 +860,16 @@ Qu’est-ce que cela signifie ? Qu’est-ce qui nous différencie ? Pourquoi est
     <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
     <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>  <!-- pour les charts/graphiques -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
 
 
 
 
-</body></html>
+</body>
+
+
+
+
+</html>
