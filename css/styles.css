@@ -46,13 +46,20 @@ Colors:
 /******************************/
 #worker{
 border: 3px solid rgba(0,137,241,255);
-border-radius: 5px;
+
+border-radius :9px;
+box-shadow: 3px 3px 4px rgb(105, 104, 104);
 }
 
 
+  
+	
+	
+  
 .pure{
 	color: white;
 }
+
 body,
 html {
     width: 100%;
@@ -120,8 +127,9 @@ a {
 }
 
 a:hover {
-	color: #626262;
+	color: #ffffff;
 	text-decoration: underline;
+	font-size: large;
 }
 
 a.turquoise {
@@ -589,6 +597,7 @@ input[type='checkbox'] {
 	bottom: 0;
 	left: 0;
 	background: #fff;
+	/*display: none;*/
 }
 
 .spinner {
@@ -606,7 +615,7 @@ input[type='checkbox'] {
 	width: 1rem;
 	height: 1rem;
 	border-radius: 100%;
-	background-color: #00bfd8;
+	background-color: #000ed8;
 	-webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
 	animation: sk-bouncedelay 1.4s infinite ease-in-out both;
 }
@@ -1738,7 +1747,7 @@ a:hover.back-to-top {
 	/* About */
 	.basic-4 .team-member {
 		display: inline-block;
-		width: 12.5rem;
+		width: 10.5rem;
 		margin-right: 2rem;
 		margin-left: 2rem;
 		vertical-align: top;
@@ -2218,6 +2227,12 @@ a:hover.back-to-top {
 		margin-left: auto;
 	}
 	/* end of footer */
+
+
+/* Calculateur*/
+
+
+
 
 
 	/* Extra Pages */

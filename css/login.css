@@ -302,3 +302,15 @@ body {
   .bloco{
     opacity: 0;
   }
+
+  .charttest{
+    height: 500px;
+    border: 1px solid red ;
+  }
+
+  .charttestbloc{
+
+    width: 100% !important;
+    height: 100% !important;
+
+  }
