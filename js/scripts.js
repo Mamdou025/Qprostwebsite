@@ -451,10 +451,12 @@ if (ctx !== null){
 
 
 
+// calcul de consommation
 
 
-  const range1el= document.getElementById("customRange1");
-  const eau= document.getElementById("wata");
+(function calculdeconsommationfontaines (){
+    const range1el= document.getElementById("customRange1");
+    const eau= document.getElementById("wata");
   const range2el= document.getElementById("customRange2");
   const tempsu= document.getElementById("tempo");
   const selectionfont=document.getElementById("inputGroupSelect01");
@@ -463,21 +465,12 @@ if (ctx !== null){
   const bouteillecons = document.getElementById("bouteillecons");
   const resume = document.getElementById("resumeconsommation");
 
+    if (range1el !== null){
 
-
- // range1el.oninput = function (){
-     
-  //    eau.innerHTML= range1el.value + ' Litres';
-     
-
-//  }
-
- // range2el.oninput = function (){
     
-   // tempsu.innerHTML= range2el.value + ' Mois';
 
-//}
-
+  
+  
 
 // mettre cube a 210 francs  1000 litres ==> 210    1 litre ==> 0.21 francs
 
@@ -539,9 +532,15 @@ function Calculedeconsommation(){
 
 }
 
-Calculedeconsommation();
+    }else{
+
+    }
+
+})();
 
 
+
+//gradient de couleur 
 
 
   function Gradientsdecouleur(){
