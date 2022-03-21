@@ -1,3 +1,8 @@
+/* Template: Evolo - StartUp HTML Landing Page Template
+   Author: Inovatik
+   Created: June 2019
+   Description: Custom JS file
+*/
 
 
 (function($) {
@@ -393,11 +398,59 @@ $('#login-button').click(function(){
 
 
 
-//test chart function 
-(function fonctionchart(){
+ 
 
+
+
+  // charts et graphiques
+  /*
+  (function graphiko(){
+    const ctx = document.getElementById('myChart').getContext('2d');
+    const myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'], 
+             datasets: [{ label: '# of Votes',
+                data: [12, 19, 3, 5, 2, 5],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+  })();
+  
+  */
+
+//test chart function 
+
+    
+
+
+
+ 
     const ctx = document.getElementById('myChart');
-    if (ctx!==null){
     const myChart = new Chart(ctx, {
         type: 'bar',
         data: {
@@ -432,30 +485,12 @@ $('#login-button').click(function(){
         }
     }
     )
-    
-}else{
-    
-}
-})();
-
-
-
-    
+  
 
 
 
 
 
-
-
-// Calcul de consommation 
-
-
-(function consommationdefontaine(){
-
-
-    const range1el = document.getElementById('customRange1');
-    if (range1el!==null){
   const range1el= document.getElementById("customRange1");
   const eau= document.getElementById("wata");
   const range2el= document.getElementById("customRange2");
@@ -466,10 +501,31 @@ $('#login-button').click(function(){
   const bouteillecons = document.getElementById("bouteillecons");
   const resume = document.getElementById("resumeconsommation");
 
+
+
+ // range1el.oninput = function (){
+     
+  //    eau.innerHTML= range1el.value + ' Litres';
+     
+
+//  }
+
+ // range2el.oninput = function (){
+    
+   // tempsu.innerHTML= range2el.value + ' Mois';
+
+//}
+
+
 // mettre cube a 210 francs  1000 litres ==> 210    1 litre ==> 0.21 francs
+
+
 range1el.oninput = Calculedeconsommation;
 range2el.oninput = Calculedeconsommation;
 selectionfont.onchange=Calculedeconsommation;
+
+
+
 function Calculedeconsommation(){
 
     tempsu.innerHTML= range2el.value + ' Mois';
@@ -477,11 +533,15 @@ function Calculedeconsommation(){
    bouteillecons.innerHTML = range2el.value*range1el.value*2000;
    resume.innerHTML = `la consommation de ${range1el.value} bouteilles de 20L par mois pendant ${range2el.value} mois comparé à la location d'une fontaine pour le meme nombre de mois   `;
 
-   if ( range2el.value !="0" && range1el.value!="0" ){   
-       if (selectionfont.value ==="1"){         
+   if ( range2el.value !="0" && range1el.value!="0" ){
+      
+       
+       if (selectionfont.value ==="1"){
+          
            let fontaine =Math.floor( 25000*range2el.value + 0.21*range1el.value);
            fontainecons.innerHTML = fontaine ;
-           differencecons.innerHTML = range2el.value*range1el.value*2000-fontaine;    
+           differencecons.innerHTML = range2el.value*range1el.value*2000-fontaine;
+           
        }
        else if(selectionfont.value ==="2") {
       
@@ -489,12 +549,19 @@ function Calculedeconsommation(){
            fontainecons.innerHTML = fontaine ;
            differencecons.innerHTML = range2el.value*range1el.value*2000-fontaine;
 
+          
+
+
        }
        else {
        
         let fontaine =Math.floor( 35000*range2el.value+ 0.21*range1el.value);
         fontainecons.innerHTML = fontaine ;
         differencecons.innerHTML = range2el.value*range1el.value*2000-fontaine;
+
+       
+
+
        }
 
    }
@@ -509,22 +576,17 @@ function Calculedeconsommation(){
 
 
 }
-}
-else{
-    
-}
 
-})();
+Calculedeconsommation();
 
 
 
-
-
-//gradients de couleur §§§§§§§
 
   function Gradientsdecouleur(){
    var couleurvague=document.getElementById("wavediv");
     var couleur1 = Math.floor(Math.random()*3)+1;
+    
+   
    switch(couleur1){
        case 1 :
     couleurvague.style.background =" linear-gradient(60deg, rgb(0 22 248) 0%, rgb(0 227 255) 100%)";
@@ -541,6 +603,11 @@ else{
    }
   
 }
+
+
+
+ 
+ 
  setInterval( Gradientsdecouleur,1500);
 
 
